@@ -1,0 +1,303 @@
+
+.blog_title {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.main-page_product__title {
+  display: inline-block;
+  color: #0a0a0a;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #dadada;
+    left: -40px;
+    top: 47%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #dadada;
+    right: -40px;
+    top: 47%;
+  }
+}
+/*
+.main-page__product {
+  .catalog__item_wrap {
+    width: 25%;
+  }
+}
+*/
+
+//===================== feedback start ======================
+.feedback {
+  background-color: black;
+  height: 350px;
+  margin-top: 120px;
+  //margin-bottom: 20px;
+}
+.feedback__wrap {
+  margin-top: 65px;
+  .bx-wrapper {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+  }
+  .bx-controls.bx-has-pager {
+    .bx-default-pager {
+      padding: 0;
+      @media (max-width: 550px) {
+        padding: 10px 0 0;
+        font-size: 13px;
+      }
+    }
+    .bx-pager-item {
+      .bx-pager-link {
+        background: white;
+        height: 4px;
+        width: 22px;
+        &:hover {
+          background: #ad5458;
+        }
+        &.active {
+          background: #ad5458;
+        }
+      }
+    }
+  }
+}
+.feedback__slider__item {
+  .feedback__slider__item_avatar {
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      border: 2px solid whitesmoke;
+
+    }
+  }
+  .feedback__slider__item_text {
+    display: flex;
+    justify-content: center;
+    padding: 20px 130px 0;
+    text-align: center;
+    @media (max-width: 990px) {
+      padding: 20px 40px 0;
+    }
+    @media (max-width: 737px) {
+
+    }
+    @media (max-width: 550px) {
+      padding: 10px 0 0;
+      font-size: 13px;
+    }
+
+
+  }
+  p {
+    color: #FFFFFF;
+  }
+  span {
+    color: #ad5458;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+  }
+}
+
+//===================== blog start ======================
+.blogs {
+  margin-top: 40px;
+}
+.main-page__blog__text {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  p {
+    color: #c2c2c2;
+    height: 182px;
+    overflow: hidden;
+    text-align: justify;
+  }
+}
+.main-page__blog__prev, .main-page__blog__text {
+  margin-top: 40px;
+}
+.main-page__blog__prev {
+  position: relative;
+  .main-page__blog__prev__date {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    right: 5px;
+    background-color: #7a7a7a;
+    z-index: 10;
+    text-align: center;
+    opacity: 0.9;
+    span {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+.main-page__blog__text__title {
+  color: #0a0a0a;
+  text-align: left;
+  font-size: 19px;
+  font-weight: 500;
+}
+.main-page__blog__text__feedback {
+  padding: 5px 0;
+   a {
+    margin-right: 10px;
+     &:hover {
+       span, i {
+         color: #0a0a0a;
+       }
+     }
+    span, i {
+      color: #c2c2c2;
+      transition: all 0.3s ease;
+    }
+    span {
+      margin-left: 4px;
+    }
+  }
+}
+//======================== benefits start ==============
+.main-page__benefits {
+  margin-top: 40px;
+}
+.main-page__blog__text__more {
+  color: #c2c2c2;
+  border: 2px solid #dfdfdf;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  height: 150px;
+  &:hover {
+    color: whitesmoke;
+    background-color: #e77075;
+    border-radius: 20px;
+    border: 2px solid #e77075;
+  }
+}
+.main-page__benefits__wrap {
+  margin-top: 40px;
+  border: 1px solid #c2c2c2;
+  padding: 20px 35px 35px;
+  height: 180px;
+  i {
+    margin-right: 10px;
+  }
+  i, span {
+    color: #0a0a0a;
+    font-size: 40px;
+  }
+  span {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    vertical-align: super;
+  }
+  p {
+    color: #c2c2c2;
+  }
+  .main-page__benefits__text {
+    overflow: hidden;
+    height: 80px;
+  }
+}
+.main-page__benefits__help__happy {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  i, a {
+    color: #0a0a0a;
+  }
+  i {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  a {
+    font-size: 20px;
+    text-decoration-line: underline;
+    vertical-align: super;
+  }
+}
+//============================= main-page_tabs =================================
+.tabs_nav {
+  background-color: #333333;
+  margin-top: 20px;
+  box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+}
+.main_page__tabs {
+  margin-top: 30px;
+}
+.tab-pane {
+  color: #000;
+  .catalog__item_wrap {
+    width: 25%;
+    @media (max-width: 990px) {
+      width: 33.333%;
+    }
+    @media (max-width: 737px) {
+      width: 50%;
+    }
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+}
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  border: none;
+
+  li {
+    a {
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      margin-right: 1px;
+
+      &:hover {
+        //border: 1px solid red;
+        background-color: @red;
+        border: none;
+      }
+    }
+  }
+  li.active a {
+    color: white;
+    transition: 0.3s all ease;
+    border: none;
+    background-color: @red;
+    &:focus {
+      color: white;
+      border: none;
+      background-color: @red;
+    }
+    &:hover {
+      color: @black;
+      border: none;
+    }
+  }
+}
+.tab-content {
+  margin-left: 1px;
+}
