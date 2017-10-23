@@ -113,7 +113,7 @@ $('.brand_btn').on('click', function () {
 //==================  catalog__item__controls ====================
 $('.catalog__item__controls__btn').on('click', function () {
     $(this).toggleClass('active');
-})
+});
 
 
 //-----------------vvvvvvvvvvvvvvvvv Price slider start vvvvvvvvvvvvvv----------------
@@ -182,12 +182,49 @@ $('.feedback__slider').bxSlider({
     auto: true
 });
 
-
+//----------------------- main tabs---------------------
+$('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+});
+//------------------------ product detail slider --------------------
+$('.product_details__main__slider').bxSlider({
+    pagerCustom: '#bx-pager',
+    controls: false
+});
+//------------------------ product detail selectors-------------
+$('.selectpicker_color').selectpicker({
+    style: 'color_selector',
+    size: 'auto'
+});
+$('.selectpicker_size').selectpicker({
+    style: 'size_selector',
+    size: 'auto'
+});
+$('.selectpicker_qty').selectpicker({
+    style: 'selectpicker_qty',
+    size: 'auto'
+});
+$('.add-to-whishlist').on('click', function () {
+    $('.heart_wishlist').toggleClass('active');
+});
+//---------------------- product detail tabs ------------------
 $('#myTabs a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
 });
 
-$('.product_details__main__slider').bxSlider({
-    pagerCustom: '#bx-pager'
+$(document).ready(function(){
+    $('.related_products__slider').bxSlider({
+        slideWidth: 300,
+        minSlides: 1,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 0,
+        auto: true
+    });
+});
+//------------------------ BLOG LIST -----------------------------
+$('.blog-sidebar__tags__body span').on('click', function () {
+    $(this).toggleClass('active');
 });

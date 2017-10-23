@@ -1,0 +1,234 @@
+main
+    .container
+        .login
+            #accordion.panel-group(role='tablist', aria-multiselectable='true')
+                .panel.panel-default
+                    #headingOne.panel-heading.active(role='tab')
+                        h4.panel-title
+                            a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                | Step 1 - login or register
+                    #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                        .panel-body
+                            .row
+                                .col-md-10
+                                    .login-prev
+                                        h5 login
+                                        p.
+                                         Lorem ipsum dolor set amet ipsum dolor set amet ipsum dolor set amet ipsum dolor set amet set amet ipsum dolor set amet
+                                    form.login-form
+                                        .login-form__username
+                                            .login-form__req
+                                                span Username
+                                                    i(class="fa fa-asterisk" aria-hidden="true")
+                                            input(type="text" placeholder="Username/Email/Mobile Number")
+                                        .login-form__password
+                                            .login-form__req
+                                                span Password
+                                                    i(class="fa fa-asterisk" aria-hidden="true")
+                                            input(type="password" placeholder="Type your password here")
+                                        .login-form__buttons
+                                            button(type="submit").btn_black login
+                                            a(href="#") Forget Password Click Here?
+                                        .login-form__buttons_social
+                                            a(href="#")
+                                                i(class="fa fa-facebook" aria-hidden="true") &nbsp; sign in with facebook
+                                            a(href="#")
+                                                i(class="fa fa-twitter" aria-hidden="true") &nbsp; sign in with twitter
+                                .col-md-14
+                                    .login-create
+                                        h5 create a account
+                                        form.login-form
+                                            .login-form__username_craete
+                                                .login-form__username__first
+                                                    .login-form__req
+                                                        span First Name
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="Enter Your First Name")
+                                                .login-form__username__last
+                                                    .login-form__req
+                                                        span Last Name
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="Enter Your Last Name")
+                                            .login-form__password
+                                                .login-form__req
+                                                    span Email Id
+                                                        i(class="fa fa-asterisk" aria-hidden="true")
+                                                input(type="text" placeholder="Enter Your Email Id")
+                                            .login-form__username_craete
+                                                .login-form__username__first
+                                                    .login-form__req
+                                                        span Choose Password
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="password" placeholder="Enter Your Password")
+                                                .login-form__username__last
+                                                    .login-form__req
+                                                        span Confirm Password
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="Confirm Your Password")
+                                            .login-form__buttons
+                                                button(type="submit").btn_black register now
+                .panel.panel-default
+                    #headingTwo.panel-heading(role='tab')
+                        h4.panel-title
+                            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                                | step 2 - shipping address
+                    #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                        .panel-body
+                            form
+                                .row
+                                    .col-md-12
+                                        h5 different address
+                                        .login-form
+                                            .login-form__username__first
+                                                .login-form__req
+                                                    span First Name
+                                                        i(class="fa fa-asterisk" aria-hidden="true")
+                                                input(type="text" placeholder="Enter Your First Name")
+                                            .login-form__username__last
+                                                .login-form__req
+                                                    span Last Name
+                                                        i(class="fa fa-asterisk" aria-hidden="true")
+                                                input(type="text" placeholder="Enter Your Last Name")
+                                            .login-form__password
+                                                .login-form__req
+                                                    span Phone number
+                                                        i(class="fa fa-asterisk" aria-hidden="true")
+                                                input(type="text" placeholder="Type your phone")
+                                            .login-form__username
+                                                .login-form__req
+                                                    span Address
+                                                        i(class="fa fa-asterisk" aria-hidden="true")
+                                                input(type="text" placeholder="Enter your street")
+                                            .login-form__password
+                                                .login-form__req
+                                                    span City/Town
+                                                        i(class="fa fa-asterisk" aria-hidden="true")
+                                                input(type="password" placeholder="Type your city here")
+
+                                    .col-md-12
+                                        .choose-address
+                                            h5 chose your address
+                                            .choose-address__list
+                                                label.labl
+                                                    input(type='radio', name='radioname', value='one_value', checked='checked')
+                                                    div.address-wrap
+                                                        .address-header
+                                                            span Address 1:
+                                                            a(href="#")
+                                                                i.fa.fa-pencil
+                                                                span Edit
+                                                        span.address-text Vasul Herasuk, Lviv, 0912345678
+                                                label.labl
+                                                    input(type='radio', name='radioname', value='another')
+                                                    div.address-wrap
+                                                        .address-header
+                                                            span Address 2:
+                                                            a(href="#")
+                                                                i.fa.fa-pencil
+                                                                span Edit
+                                                        span.address-text Vasul Herasuk, Lviv, 0912345678
+                                                label.labl
+                                                    input(type='radio', name='radioname', value='another')
+                                                    div.address-wrap
+                                                        .address-header
+                                                            span Address 3:
+                                                            a(href="#")
+                                                                i.fa.fa-pencil
+                                                                span Edit
+                                                        span.address-text Vasul Herasuk, Lviv, 0912345678
+
+
+                                                .choose-address__item
+                            .login-form__buttons
+                                button(type="submit").btn_black Proceed to checkout
+                .panel.panel-default
+                    #headingThree.panel-heading(role='tab')
+                        h4.panel-title
+                            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                                | step 3 - payment
+                    #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                        .panel-body
+                            .payment-method
+                                form
+                                    #payment-tab.panel-group(role='tablist', aria-multiselectable='true')
+                                        .panel.panel-default
+                                            #heading-cash.panel-heading.active(role='tab')
+                                                h4.panel-title.payment-type
+                                                    a(role='button', data-toggle='collapse', data-parent='#payment-tab', href='#collapse-cash', aria-expanded='true', aria-controls='collapse-cash')
+                                                        | cash
+                                            #collapse-cash.panel-collapse.collapse-cash.collapse.in(role='tabpanel', aria-labelledby='heading-cash')
+                                                .panel-body
+                                                    p Lorem ipsum dolor set amet Lorem ipsum dolor set amet orem ipsum dolor set amet orem ipsum dolor set amet orem ipsum dolor set amet orem ipsum dolor set amet orem ipsum dolor set amet
+                                                    label
+                                                        input(type="checkbox")
+                                                        span Don`t call me
+                                        .panel.panel-default
+                                            #heading-card.panel-heading(role='tab')
+                                                h4.panel-title.payment-type
+                                                    a.collapsed(role='button', data-toggle='collapse', data-parent='#payment-tab', href='#collapse-card', aria-expanded='false', aria-controls='collapse-card')
+                                                        | card
+                                            #collapse-card.panel-collapse.collapse-card.collapse(role='tabpanel', aria-labelledby='heading-card')
+                                                .panel-body
+                                                    .login-form__req
+                                                        span Card number
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="Your card number")
+                                                    .login-form__req
+                                                        span Name On Card
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="Card holder name")
+                                                    .login-form__username_craete
+                                                        .login-form__username__first
+                                                            .login-form__req
+                                                                span Expiration Date
+                                                                    i(class="fa fa-asterisk" aria-hidden="true")
+                                                            select.selectpicker
+                                                                option 01
+                                                                option 02
+                                                                option 03
+                                                                option 04
+                                                                option 05
+                                                                option 06
+                                                                option 07
+                                                                option 08
+                                                                option 09
+                                                                option 10
+                                                                option 11
+                                                                option 12
+                                                            select.selectpicker
+                                                                option 17
+                                                                option 18
+                                                                option 19
+                                                                option 20
+                                                                option 21
+                                                                option 22
+                                                                option 23
+                                                                option 24
+                                                                option 25
+                                                                option 26
+                                                        .login-form__username__last.collapse-card__cvv
+                                                            .login-form__req
+                                                                span CVV
+                                                                    i(class="fa fa-asterisk" aria-hidden="true")
+                                                            input.collapse-card__cvv__input(type="text" placeholder="cvv")
+                                        .panel.panel-default
+                                            #heading-without.panel-heading(role='tab')
+                                                h4.panel-title.payment-type
+                                                    a.collapsed(role='button', data-toggle='collapse', data-parent='#payment-tab', href='#collapse-without', aria-expanded='false', aria-controls='collapse-without')
+                                                        | without
+                                            #collapse-without.panel-collapse.collapse.collapse-without(role='tabpanel', aria-labelledby='heading-without')
+                                                .panel-body
+                                                    .login-form__req
+                                                        span Name and Surname
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="Your name and surname")
+                                                    .login-form__req
+                                                        span Cod ЄДРПО
+                                                            i(class="fa fa-asterisk" aria-hidden="true")
+                                                    input(type="text" placeholder="cod")
+
+
+                                    .payment-method__submit
+                                        button(type="submit").btn_black submit
+                            .payment-method__content
+

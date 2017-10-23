@@ -8,6 +8,7 @@
   display: inline-block;
   color: #0a0a0a;
   position: relative;
+  text-transform: uppercase;
   &:before {
     content: '';
     position: absolute;
@@ -115,68 +116,7 @@
   }
 }
 
-//===================== blog start ======================
-.blogs {
-  margin-top: 40px;
-}
-.main-page__blog__text {
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  p {
-    color: #c2c2c2;
-    height: 182px;
-    overflow: hidden;
-    text-align: justify;
-  }
-}
-.main-page__blog__prev, .main-page__blog__text {
-  margin-top: 40px;
-}
-.main-page__blog__prev {
-  position: relative;
-  .main-page__blog__prev__date {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 5px;
-    right: 5px;
-    background-color: #7a7a7a;
-    z-index: 10;
-    text-align: center;
-    opacity: 0.9;
-    span {
-      font-size: 16px;
-      text-align: center;
-    }
-  }
-}
-.main-page__blog__text__title {
-  color: #0a0a0a;
-  text-align: left;
-  font-size: 19px;
-  font-weight: 500;
-}
-.main-page__blog__text__feedback {
-  padding: 5px 0;
-   a {
-    margin-right: 10px;
-     &:hover {
-       span, i {
-         color: #0a0a0a;
-       }
-     }
-    span, i {
-      color: #c2c2c2;
-      transition: all 0.3s ease;
-    }
-    span {
-      margin-left: 4px;
-    }
-  }
-}
+
 //======================== benefits start ==============
 .main-page__benefits {
   margin-top: 40px;
@@ -247,7 +187,7 @@
 .main_page__tabs {
   margin-top: 30px;
 }
-.tab-pane {
+.tab-pane-main {
   color: #000;
   .catalog__item_wrap {
     width: 25%;
@@ -262,7 +202,7 @@
     }
   }
 }
-.nav-tabs {
+.nav-tabs-main {
   display: flex;
   justify-content: center;
   border: none;

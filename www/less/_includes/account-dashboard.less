@@ -1,0 +1,135 @@
+.account-dashboard__main {
+  margin-top: 30px;
+}
+.account-sidebar {
+  li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  a {
+    color: #c2c2c2;
+    transition: 0.4s all ease;
+    &:hover {
+      color: @red;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 10px;
+    }
+    &.active {
+      color: @black;
+      font-weight: 500;
+      &:hover {
+        color: @red;
+      }
+    }
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+}
+//======================== account main ====================
+.account-avatar {
+  .avatar-img {
+    width: 100px;
+    height: 110px;
+  }
+  .avatar-change {
+    a {
+      color: @black;
+      font-size: 13px;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.account-dashboard__text {
+  margin: 10px 0;
+  span {
+    color: @red;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  p {
+    color: #848484;
+  }
+}
+.personal-information, .newsletter-subscription, .personal-address {
+  border: 1px solid #dfdfdf;
+  margin-bottom: 20px;
+}
+.personal-information__top, .newsletter-subscription__top, .personal-address__top {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #efefef;
+  border-bottom: 1px solid #dfdfdf;
+}
+.personal-information_edit {
+  span:first-child {
+    color: @black;
+    font-weight: 500;
+  }
+  a {
+    color: @red;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+.personal-information__bottom, .newsletter-subscription__bottom {
+  color: #848484;
+  padding: 20px;
+  span {
+    display: block;
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.personal-address__bottom {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.personal-address__bottom__item {
+  padding: 20px;
+  width: 48%;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 20px;
+  span.address-text {
+    color: #848484;
+  }
+  @media (max-width: 660px) {
+    width: 100%;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.personal-address-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  a {
+    font-size: 12px;
+  }
+}
+.personal-address__name {
+  color: @black;
+}
+.personal-address__edit {
+  a {
+    color: @red;
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+  i {
+    margin-right: 5px;
+  }
+}

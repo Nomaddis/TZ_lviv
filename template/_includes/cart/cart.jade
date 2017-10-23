@@ -1,0 +1,145 @@
+main.main
+    section.your-cart
+        .container
+            //h5 Your cart
+            article.cart-container
+                h5 Your cart
+                .column-group
+                    .column
+                    .column
+                    .column
+                .column.column-last
+                header
+                    ul
+                        li.cart-item Product name
+                        li.cart-item QTY
+                        li.cart-item Price
+                        li.cart-item Total
+                        li.cart-item
+                .content
+                    ul
+                        li.cart-item
+                            a(href="/www/product_details.html").img-cont
+                                img(src="img/product1.jpg")
+                                span Product title
+                        li.cart-item
+                            .product_details__buy-param
+                                select.selectpicker_qty
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                        li.cart-item
+                            span 450$
+                        li.cart-item
+                            span 900$
+                        li.cart-item
+                            button.cancel-cart-item
+                                i(class="fa fa-times" aria-hidden="true")
+                    ul
+                        li.cart-item
+                            a(href="/www/product_details.html").img-cont
+                                img(src="img/product1.jpg")
+                                span Product title Product titleProduct title
+                        li.cart-item
+                            .product_details__buy-param
+                                select.selectpicker_qty
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                        li.cart-item
+                            span 300$
+                        li.cart-item
+                            span 600$
+                        li.cart-item
+                            button.cancel-cart-item
+                                i(class="fa fa-times" aria-hidden="true")
+                    ul
+                        li.cart-item
+                            a(href="/www/product_details.html").img-cont
+                                img(src="img/product1.jpg")
+                                span Product title Product titleProduct title
+                        li.cart-item
+                            .product_details__buy-param
+                                select.selectpicker_qty
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                        li.cart-item
+                            span 300$
+                        li.cart-item
+                            span 600$
+                        li.cart-item
+                            button.cancel-cart-item
+                                i(class="fa fa-times" aria-hidden="true")
+    section.cart-aply
+        .container
+            .row
+                .col-md-12
+                    .promoution-code
+                        h5 have a promotional code
+                        p.
+                            Lorem ipsum dolor set amet ipsum dolor set amet ipsum dolor set amet ipsum dolor set amet
+                        form(action="URL" name="detail_page_review" method="")
+                            .promoution-code__input
+                                input(type="text" placeholder="Enter your promocode")
+                                .input-success
+                                    i(class="fa fa-check" aria-hidden="true")
+                                        span Successfully Applied
+                            button(type="submit").btn_black APPLY
+                .col-md-12
+                    .aply-purpose
+                        h5 cart total
+                        table.cart-total__table
+                            tr
+                                td
+                                    span Subtotal
+                                td
+                                    span $3150
+                            tr
+                                td
+                                    span Shipping & Handling Charge
+                                td
+                                    span $15
+                            tr
+                                td
+                                    span Grand Total
+                                td
+                                    span $3165
+                        .cart-total__btn
+                            button(type="").btn_gray UPDATE CART
+                            button(type="").btn_black PROCEED TO CHECKOUT
+    section.cart-slider
+        .container
+            .related_products__head
+                .header
+                    h4 You may also like
+            .related_products
+                a.slide-side-next.slide-side
+                a.slide-side-prev.slide-side
+                .related_products__slider
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade
+                    .slide
+                        include ../blocks/product.jade

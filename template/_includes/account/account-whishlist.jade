@@ -1,0 +1,60 @@
+main
+    .account-orders__wrap
+        .container
+            .row
+                .col-md-6
+                    include ../blocks/account-sidebar.jade
+                .col-md-18
+                    .account-orders__main
+                        span.account-orders__main__title Your whishlist Items
+                        section.your-cart
+                            //h5 Your cart
+                            article.cart-container
+                                .column-group
+                                    .column
+                                    .column
+                                    .column
+                                .column.column-last
+                                header
+                                    ul
+                                        li.cart-item.cart-item_name Product name
+                                        li.cart-item.cart-item_purchase
+                                        li.cart-item.cart-item_delivery
+                                        //li.cart-item
+                                .content
+                                    ul
+                                        li.cart-item
+                                            a(href="/www/product_details.html").img-cont
+                                                img(src="img/product1.jpg")
+                                                .cart-item__info
+                                                    span Product title
+                                                    span.cart-item__info__price $86.00
+                                        li.cart-item
+                                            button(type="").btn.btn_red add to cart
+                                        li.cart-item
+                                            button.cancel-cart-item
+                                                i(class="fa fa-times" aria-hidden="true")
+                                    ul
+                                        li.cart-item
+                                            a(href="/www/product_details.html").img-cont
+                                                img(src="img/product1.jpg")
+                                                .cart-item__info
+                                                    span Product title Product titleProduct title
+                                                    span.cart-item__info__price $86.00
+                                        li.cart-item
+                                            button(type="").btn.btn_red add to cart
+                                        li.cart-item
+                                            button.cancel-cart-item
+                                                i(class="fa fa-times" aria-hidden="true")
+                                    ul
+                                        li.cart-item
+                                            a(href="/www/product_details.html").img-cont
+                                                img(src="img/product1.jpg")
+                                                .cart-item__info
+                                                    span Product title Product titleProduct title
+                                                    span.cart-item__info__price $86.00
+                                        li.cart-item
+                                            button(type="").btn.btn_red add to cart
+                                        li.cart-item
+                                            button.cancel-cart-item
+                                                i(class="fa fa-times" aria-hidden="true")

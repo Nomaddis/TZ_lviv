@@ -231,3 +231,52 @@
 }
 
 /*=====  End of LINK  ======*/
+
+
+
+/* ======== buttons ==========*/
+
+.btn_black {
+	background-color: #1a1a1a;
+	color: whitesmoke;
+	text-transform: uppercase;
+	border-radius: 20px;
+	padding: 7px 30px;
+	//margin-top: 20px;
+	border: 1px solid #1a1a1a;
+	transition: 0.3s all ease;
+	&:hover {
+		background-color: white;
+		color: #1a1a1a;
+	}
+}
+.btn_gray {
+	background-color: gray;
+	color: whitesmoke;
+	text-transform: uppercase;
+	//border: none;
+	border-radius: 20px;
+	padding: 7px 30px;
+	margin-top: 20px;
+	border: 1px solid gray;
+	transition: 0.3s all ease;
+	&:hover {
+		background-color: white;
+		color: #1a1a1a;
+	}
+}
+.btn_red {
+	background-color: transparent;
+	text-transform: uppercase;
+	color: gray;
+	//border: none;
+	border-radius: 20px;
+	padding: 7px 30px;
+	border: 1px solid gray;
+	transition: 0.3s all ease;
+	&:hover {
+		background-color: @red;
+		color: whitesmoke;
+		border: 1px solid @red;
+	}
+}

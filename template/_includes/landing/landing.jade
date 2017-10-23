@@ -19,7 +19,7 @@ main.main
     .tabs_nav
         .container
                 // Nav tabs
-                ul.nav.nav-tabs(role='tablist')
+                ul.nav.nav-tabs.nav-tabs-main(role='tablist')
                     li.active(role='presentation')
                         a(href='#home', aria-controls='home', role='tab', data-toggle='tab') SALE
                     li(role='presentation')
@@ -29,11 +29,9 @@ main.main
     section.new_arrival
         .container
             .main_page__tabs
-                // Nav tabs
-
                 // Tab panes
                 .tab-content
-                    #home.tab-pane.active(role='tabpanel')
+                    #home.tab-pane.active.tab-pane-main(role='tabpanel')
                         include ../blocks/product.jade
                         include ../blocks/product.jade
                         include ../blocks/product.jade
@@ -42,7 +40,7 @@ main.main
                         include ../blocks/product.jade
                         include ../blocks/product.jade
                         include ../blocks/product.jade
-                    #profile.tab-pane(role='tabpanel')
+                    #profile.tab-pane.tab-pane-main(role='tabpanel')
                         include ../blocks/product.jade
                         include ../blocks/product.jade
                         include ../blocks/product.jade
@@ -51,7 +49,7 @@ main.main
                         include ../blocks/product.jade
                         include ../blocks/product.jade
                         include ../blocks/product.jade
-                    #messages.tab-pane(role='tabpanel')
+                    #messages.tab-pane.tab-pane-main(role='tabpanel')
                         include ../blocks/product.jade
                         include ../blocks/product.jade
                         include ../blocks/product.jade
@@ -60,16 +58,6 @@ main.main
                         include ../blocks/product.jade
                         include ../blocks/product.jade
                         include ../blocks/product.jade
-            //h4.new_arrival__title.main-page_product__title NEW ARRIVAL
-            //.new_arrival__product.main-page__product
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
-            //    include ../blocks/product.jade
     section.feedback
         .container
             .feedback__wrap
@@ -95,95 +83,64 @@ main.main
                             .feedback__slider__item_text
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
                             span Anonim
-
-    //section.hot
-    //    .container
-    //        h4.new_arrival__title.main-page_product__title HOT
-    //        .hot_product.main-page__product
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
-    //            include ../blocks/product.jade
     section.blogs
         .container
             .blog_title
                 h4.new_arrival__title.main-page_product__title BLOGS
             .main-page_blog
                 .row
-                    .col-xs-12
-                        .row
-                            .col-sm-12
-                                .main-page__blog__prev
-                                    a(href="").img-cont
-                                        img(src="img/product2.jpg")
-                                    .main-page__blog__prev__date
-                                        span 25 ЛИС
-                            .col-sm-12
-                                .main-page__blog__text
-                                    a(href="").main-page__blog__text__title Vivamus finbus ante
-                                    .main-page__blog__text__feedback
-                                        a(href="").main-page__blog__text__comm
-                                            i.fa.fa-comments(aria-hidden="true")
-                                                span 58
-                                                span comments
-                                        a(href="").main-page__blog__text__like
-                                            i.fa.fa-thumbs-o-up(aria-hidden="true")
-                                                span 58
-                                                span comments
-                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.
-                                    a.main-page__blog__text__more(href="#") READ MORE
-                    .col-xs-12
-                        .row
-                            .col-sm-12
-                                .main-page__blog__prev
-                                    a(href="").img-cont
-                                        img(src="img/product1.jpg")
-                                    .main-page__blog__prev__date
-                                        span 25 ЛИС
-                            .col-sm-12
-                                .main-page__blog__text
-                                    a(href="").main-page__blog__text__title Vivamus finbus ante
-                                    .main-page__blog__text__feedback
-                                        a(href="").main-page__blog__text__comm
-                                            i.fa.fa-comments(aria-hidden="true")
-                                                span 58
-                                                span comments
-                                        a(href="").main-page__blog__text__like
-                                            i.fa.fa-thumbs-o-up(aria-hidden="true")
-                                                span 58
-                                                span comments
-                                    p | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.
-                                    a.main-page__blog__text__more(href="#") READ MORE
-            .main-page__benefits
-                .row
-                    .col-md-8
-                        .main-page__benefits__wrap
-                            .main-page__benefits__title
-                                i.fa.fa-usd(aria-hidden="true")
-                                span 100% Money Back Guarantee
-                            .main-page__benefits__text
-                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
-                    .col-md-8
-                        .main-page__benefits__wrap
-                            .main-page__benefits__title
-                                i.fa.fa-plane(aria-hidden="true")
-                                span Free Shipping
-                            .main-page__benefits__text
-                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
-                    .col-md-8
-                        .main-page__benefits__wrap
-                            .main-page__benefits__title
-                                i.fa.fa-comments(aria-hidden="true")
-                                span 24x7 Helpline
-                            .main-page__benefits__text
-                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
-            .main-page__benefits__help
-                .row
-                    .col-md-24
-                        .main-page__benefits__help__happy
-                            i.fa.fa-smile-o(aria-hidden="true")
-                            a(href="#") Happy to help, 24x7
+                    .col-sm-12
+                        include ../blocks/blog-item-prev.jade
+                    .col-sm-12
+                        include ../blocks/blog-item-prev.jade
+                        //.row
+                        //    .col-sm-12
+                        //        .blog__prev
+                        //            a(href="").img-cont
+                        //                img(src="img/product1.jpg")
+                        //            .main-page__blog__prev__date
+                        //                span 25 ЛИС
+                        //    .col-sm-12
+                        //        .blog__text
+                        //            a(href="").main-page__blog__text__title Vivamus finbus ante
+                        //            .main-page__blog__text__feedback
+                        //                a(href="").main-page__blog__text__comm
+                        //                    i.fa.fa-comments(aria-hidden="true")
+                        //                        span 58
+                        //                        span comments
+                        //                a(href="").main-page__blog__text__like
+                        //                    i.fa.fa-thumbs-o-up(aria-hidden="true")
+                        //                        span 58
+                        //                        span comments
+                        //            p | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, lobortis maximus elit tempus vel. Maecenas commodo odio sit amet mi rhoncus, nec vestibulum risus ornare.
+                        //            a.main-page__blog__text__more(href="#") READ MORE
+            .benefits
+                .main-page__benefits
+                    .row
+                        .col-md-8
+                            .main-page__benefits__wrap
+                                .main-page__benefits__title
+                                    i.fa.fa-usd(aria-hidden="true")
+                                    span 100% Money Back Guarantee
+                                .main-page__benefits__text
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                        .col-md-8
+                            .main-page__benefits__wrap
+                                .main-page__benefits__title
+                                    i.fa.fa-plane(aria-hidden="true")
+                                    span Free Shipping
+                                .main-page__benefits__text
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                        .col-md-8
+                            .main-page__benefits__wrap
+                                .main-page__benefits__title
+                                    i.fa.fa-comments(aria-hidden="true")
+                                    span 24x7 Helpline
+                                .main-page__benefits__text
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                .main-page__benefits__help
+                    .row
+                        .col-md-24
+                            .main-page__benefits__help__happy
+                                i.fa.fa-smile-o(aria-hidden="true")
+                                a(href="#") Happy to help, 24x7
