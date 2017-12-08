@@ -19,6 +19,11 @@
   background-color: @gray;
   padding: 10px 0;
 }
+.header__top__fix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .heder__mid {
   padding: 12px 0;
   .logo_wrap {
@@ -28,6 +33,9 @@
       display: block;
       img {
         height: 60px;
+        @media (max-width: 425px) {
+          height: 40px;
+        }
       }
     }
   }
@@ -59,6 +67,30 @@
     a:last-child {
       margin-right: 0;
     }
+    @media (max-width: 425px) {
+      li {
+        margin-right: 1rem;
+      }
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.header-personal {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  &:hover {
+    transition: all 0.3s ease;
+    i, span {
+      color: @red;
+    }
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    display: block;
   }
 }
 .shopping-cart {
@@ -86,7 +118,7 @@
 }
 .header__top__info {
   color: @gray-dark;
-  float: left;
+  //float: left;
   i {
   margin-right: 5px;
   }
@@ -101,15 +133,26 @@
       text-decoration: none;
       color: @red;
     }
+    &.active {
+      color: @red;
+    }
+  }
+}
+.header__top__actions__signIn {
+  i, span {
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    i, span {
+      color: @red;
+    }
   }
 }
 .header__top__info__mail {
   margin-right: 0;
-
-
 }
 .header__top__actions {
-  float: right;
+  //float: right;
   i {
     color: @gray-dark;
     margin-right: 5px;
@@ -225,6 +268,20 @@
       transform: translateX(0);
       visibility: visible;
       opacity: 1;
+      .menu_caret {
+        visibility: hidden;
+        opacity: 0;
+      }
+      li.parent {
+        li {
+           /*border-top: none;
+           border-bottom: none;*/
+        }
+        ul {
+          border: none;
+          box-shadow: none;
+        }
+      }
     }
     ul {
       li {
@@ -253,7 +310,7 @@
 .menu_caret {
   position: absolute;
   display: block;
-  top: -2px;
+  top: 22px;
   right: 10px;
   bottom: 0;
   width: 8px;
@@ -341,6 +398,7 @@
   top: 9px;
   right: 0;
   display: none;
+
   @media (max-width: @screen-xs) {
     display: block;
   }
@@ -348,6 +406,7 @@
 .search_block {
   position: relative;
   top: 11px;
+  z-index: 10;
   float: right;
   padding: 4px 15px;
   background-color: lighten(@black, 8%);

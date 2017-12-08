@@ -1,28 +1,32 @@
 
 header.header
     section.header__top
-        .container.clearfix
-            .header__top__info.clearfix
-                .header__top__info__language
-
-                    a(href="#")
+        .container
+            .header__top__fix
+                .header__top__info
+                    .header__top__info__language
+                        //a(href="#")
                         i(class="fa fa-globe" aria-hidden="true")
-                        span English
-                .header__top__info__phone
-                    a(href="tel:+3801234567")
-                        i(class="fa fa-mobile" aria-hidden="true")
-                        span +3801234567
-                .header__top__info__mail
-                    a(href="mailto:tb-lviv@Gmail.com")
-                        i(class="fa fa-envelope-o" aria-hidden="true")
-                        span tb-lviv@Gmail.com
-            .header__top__actions
-
-                a.header__top__actions__SignIn(href="#")
-                    i(class="fa fa-sign-in" aria-hidden="true")
-                    span Sign In
-                span /
-                a.header__top__actions__Register(href="#") Register
+                        a(href="#").active UA
+                        span |
+                        a(href="#") RU
+                    .header__top__info__phone
+                        a(href="tel:+3801234567")
+                            i(class="fa fa-mobile" aria-hidden="true")
+                            span +3801234567
+                    .header__top__info__mail
+                        a(href="mailto:tb-lviv@Gmail.com")
+                            i(class="fa fa-envelope-o" aria-hidden="true")
+                            span tb-lviv@Gmail.com
+                .header__top__actions
+                    a(href="/www/login.html").header__top__actions__signIn
+                        i(class="fa fa-sign-in" aria-hidden="true")
+                        span Sign In/Register
+                    a(href="/www/login.html").header-personal
+                        i(class="fa fa-user" aria-hidden="true")
+                        span Profile_name
+                    //span /
+                    //a.header__top__actions__Register(href="#")
 
     section.heder__mid
         .container.clearfix
@@ -32,19 +36,13 @@ header.header
 
             ul.header_links
                 li
-                    a(href="/www/contact-us.html") Contact us
+                    a(href="/www/catalog.html") Catalog
                 li
                     a(href="/www/our-blog.html") Blog
                 li
-                    a(href="/www/catalog.html") Catalog
+                    a(href="/www/contact-us.html") Contact us
                 li
-                    a(href="#") Testimonials
-                li
-                    a(href="#") Pricing
-                li
-                    a(href="#") Lorem
-                li
-                    a(href="#") Contact
+                    a(href="/www/software.html") Software
                 li
                     a(href="/www/cart.html").shopping-cart
                         i(class="fa fa-shopping-cart fa-2x" aria-hidden="true")
@@ -54,7 +52,7 @@ header.header
             .main_navigation.clearfix
                 button.btn.show_mainmenu(id="show_mainmenu")
                     span.show_mainmenu__line
-                .mainmenu
+                .mainmenu#mainmenu
                     ul
                         li
                             a(href='#') Пункт 1

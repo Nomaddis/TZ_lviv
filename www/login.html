@@ -8,6 +8,7 @@
     <title>Територія захисту</title>
     <!-- Bootstrap core CSS-->
     <link href="css/all.css" rel="stylesheet">
+    <!--link(href='#{pathToAssets}/bootstrap-select.css', rel='stylesheet')-->
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
     <!-- init bx-slider css start-->
     <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
@@ -22,26 +23,30 @@
   <body>
     <header class="header">
       <section class="header__top">
-        <div class="container clearfix">
-          <div class="header__top__info clearfix">
-            <div class="header__top__info__language"><a href="#"><i aria-hidden="true" class="fa fa-globe"></i><span>English</span></a></div>
-            <div class="header__top__info__phone"><a href="tel:+3801234567"><i aria-hidden="true" class="fa fa-mobile"></i><span>+3801234567</span></a></div>
-            <div class="header__top__info__mail"><a href="mailto:tb-lviv@Gmail.com"><i aria-hidden="true" class="fa fa-envelope-o"></i><span>tb-lviv@Gmail.com</span></a></div>
+        <div class="container">
+          <div class="header__top__fix">
+            <div class="header__top__info">
+              <div class="header__top__info__language">
+                <!--a(href="#")--><i aria-hidden="true" class="fa fa-globe"></i><a href="#" class="active">UA</a><span>|</span><a href="#">RU</a>
+              </div>
+              <div class="header__top__info__phone"><a href="tel:+3801234567"><i aria-hidden="true" class="fa fa-mobile"></i><span>+3801234567</span></a></div>
+              <div class="header__top__info__mail"><a href="mailto:tb-lviv@Gmail.com"><i aria-hidden="true" class="fa fa-envelope-o"></i><span>tb-lviv@Gmail.com</span></a></div>
+            </div>
+            <div class="header__top__actions"><a href="/www/login.html" class="header__top__actions__signIn"><i aria-hidden="true" class="fa fa-sign-in"></i><span>Sign In/Register</span></a><a href="/www/login.html" class="header-personal"><i aria-hidden="true" class="fa fa-user"></i><span>Profile_name</span></a>
+              <!--span /-->
+              <!--a.header__top__actions__Register(href="#")-->
+            </div>
           </div>
-          <div class="header__top__actions"><a href="#" class="header__top__actions__SignIn"><i aria-hidden="true" class="fa fa-sign-in"></i><span>Sign In</span></a><span>/</span><a href="#" class="header__top__actions__Register">Register</a></div>
         </div>
       </section>
       <section class="heder__mid">
         <div class="container clearfix">
           <div class="logo_wrap"><a href="/www/main.html" class="logo"><img src="img/logo.png"></a></div>
           <ul class="header_links">
-            <li><a href="/www/contact-us.html">Contact us</a></li>
-            <li><a href="/www/our-blog.html">Blog</a></li>
             <li><a href="/www/catalog.html">Catalog</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/www/our-blog.html">Blog</a></li>
+            <li><a href="/www/contact-us.html">Contact us</a></li>
+            <li><a href="/www/software.html">Software</a></li>
             <li><a href="/www/cart.html" class="shopping-cart"><i aria-hidden="true" class="fa fa-shopping-cart fa-2x"><span class="shopping_cart_circle">5</span></i></a></li>
           </ul>
         </div>
@@ -50,7 +55,7 @@
         <div class="container clearfix">
           <div class="main_navigation clearfix">
             <button id="show_mainmenu" class="btn show_mainmenu"><span class="show_mainmenu__line"></span></button>
-            <div class="mainmenu">
+            <div id="mainmenu" class="mainmenu">
               <ul>
                 <li><a href="#">Пункт 1</a></li>
                 <li><a href="#">Пункт 2</a></li>
@@ -101,7 +106,7 @@
           <div class="login">
             <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
               <div class="panel panel-default">
-                <div id="headingOne" role="tab" class="panel-heading active">
+                <div id="headingOne" role="tab" class="panel-heading active login-panel">
                   <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Step 1 - login or register</a></h4>
                 </div>
                 <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
@@ -115,16 +120,19 @@
                         <form class="login-form">
                           <div class="login-form__username">
                             <div class="login-form__req"><span>Username<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                            <input type="text" placeholder="Username/Email/Mobile Number">
+                            <input type="text" placeholder="Username/Email/Mobile Number" class="login-input">
                           </div>
                           <div class="login-form__password">
                             <div class="login-form__req"><span>Password<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                            <input type="password" placeholder="Type your password here">
+                            <input type="password" placeholder="Type your password here" class="login-input">
                           </div>
                           <div class="login-form__buttons">
                             <button type="submit" class="btn_black">login</button><a href="#">Forget Password Click Here?</a>
                           </div>
-                          <div class="login-form__buttons_social"><a href="#"><i aria-hidden="true" class="fa fa-facebook">&nbsp; sign in with facebook</i></a><a href="#"><i aria-hidden="true" class="fa fa-twitter">&nbsp; sign in with twitter</i></a></div>
+                          <div class="login-form__buttons_social"><a href="#"><i aria-hidden="true" class="fa fa-facebook">&nbsp; sign in with facebook</i></a>
+                            <!--a(href="#")-->
+                            <!--    i(class="fa fa-twitter" aria-hidden="true") &nbsp; sign in with twitter-->
+                          </div>
                         </form>
                       </div>
                       <div class="col-md-14">
@@ -134,25 +142,25 @@
                             <div class="login-form__username_craete">
                               <div class="login-form__username__first">
                                 <div class="login-form__req"><span>First Name<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                                <input type="text" placeholder="Enter Your First Name">
+                                <input type="text" placeholder="Enter Your First Name" class="login-input">
                               </div>
                               <div class="login-form__username__last">
                                 <div class="login-form__req"><span>Last Name<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                                <input type="text" placeholder="Enter Your Last Name">
+                                <input type="text" placeholder="Enter Your Last Name" class="login-input">
                               </div>
                             </div>
                             <div class="login-form__password">
                               <div class="login-form__req"><span>Email Id<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                              <input type="text" placeholder="Enter Your Email Id">
+                              <input type="text" placeholder="Enter Your Email Id" class="login-input">
                             </div>
                             <div class="login-form__username_craete">
                               <div class="login-form__username__first">
                                 <div class="login-form__req"><span>Choose Password<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                                <input type="password" placeholder="Enter Your Password">
+                                <input type="password" placeholder="Enter Your Password" class="login-input">
                               </div>
                               <div class="login-form__username__last">
                                 <div class="login-form__req"><span>Confirm Password<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                                <input type="text" placeholder="Confirm Your Password">
+                                <input type="text" placeholder="Confirm Your Password" class="login-input">
                               </div>
                             </div>
                             <div class="login-form__buttons">
@@ -166,7 +174,7 @@
                 </div>
               </div>
               <div class="panel panel-default">
-                <div id="headingTwo" role="tab" class="panel-heading">
+                <div id="headingTwo" role="tab" class="panel-heading login-panel">
                   <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">step 2 - shipping address</a></h4>
                 </div>
                 <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
@@ -178,23 +186,27 @@
                           <div class="login-form">
                             <div class="login-form__username__first">
                               <div class="login-form__req"><span>First Name<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                              <input type="text" placeholder="Enter Your First Name">
+                              <input type="text" placeholder="Enter Your First Name" class="shipping-input">
                             </div>
                             <div class="login-form__username__last">
                               <div class="login-form__req"><span>Last Name<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                              <input type="text" placeholder="Enter Your Last Name">
+                              <input type="text" placeholder="Enter Your Last Name" class="shipping-input">
                             </div>
                             <div class="login-form__password">
                               <div class="login-form__req"><span>Phone number<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                              <input type="text" placeholder="Type your phone">
+                              <input type="text" placeholder="Type your phone" class="shipping-input">
                             </div>
                             <div class="login-form__username">
                               <div class="login-form__req"><span>Address<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                              <input type="text" placeholder="Enter your street">
+                              <input type="text" placeholder="Enter your street" class="shipping-input">
                             </div>
                             <div class="login-form__password">
                               <div class="login-form__req"><span>City/Town<i aria-hidden="true" class="fa fa-asterisk"></i></span></div>
-                              <input type="password" placeholder="Type your city here">
+                              <input type="password" placeholder="Type your city here" class="shipping-input">
+                            </div>
+                            <div class="login-form__from-market">
+                              <input type="checkbox" id="from-market">
+                              <label for="from-market">Самовивіз з магазину у м. Львів</label>
                             </div>
                           </div>
                         </div>
@@ -233,7 +245,7 @@
                 </div>
               </div>
               <div class="panel panel-default">
-                <div id="headingThree" role="tab" class="panel-heading">
+                <div id="headingThree" role="tab" class="panel-heading login-panel">
                   <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">step 3 - payment</a></h4>
                 </div>
                 <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
@@ -342,15 +354,12 @@
           </div>
           <div class="col-md-8">
             <div class="footer__inf">
-              <h5 class="footer__title">Informations</h5>
+              <h5 class="footer__title">Menu</h5>
               <div class="footer__title_line"></div>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Delivery Information</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Return Policy</a></li>
+                <li><a href="/www/catalog.html">Catalog</a></li>
+                <li><a href="/www/our-blog.html">Blog</a></li>
+                <li><a href="/www/contact-us.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -389,8 +398,10 @@
     <script src="js/bs-js/modal.js"></script>
     <!-- -- bx-slider init start---//-->
     <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js')-->
+    <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js')-->
+    
     <!-- -- jquery - UI init end---//-->
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
     <!-- -- jquery - UI init end---//-->

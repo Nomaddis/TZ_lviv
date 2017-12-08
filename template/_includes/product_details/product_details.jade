@@ -28,8 +28,10 @@ section.product_details
 
                 .col-md-12
                     .product_details__main__params
+                        //add class ".inactive" vvvvv
                         .product_details__main__params_top
                             h3.product_details__main__params_top__title Product title
+                            span.out-of-stock__title out of stock
                             .product_details__main__params_top__stars
                                 a(href="").catalog__item__stars_link
                                     i(class="fa fa-star" aria-hidden="true")
@@ -39,21 +41,21 @@ section.product_details
                                     i(class="fa fa-star-o" aria-hidden="true")
                                 span.in-stock in stock
                             .product_details__main__params_top__buttons
-                                .product_details__main__params_top__buttons_color
-                                    select.selectpicker_color
-                                        option(data-content="<div class='product_details_color_select color_select_black'></div><span class='label label-success'>black</span>")
-                                        option(data-content="<div class='product_details_color_select color_select_blue'></div><span class='label label-success'>blue</span>")
-                                        option(data-content="<div class='product_details_color_select color_select_green'></div><span class='label label-success'>green</span>")
-                                        option(data-content="<div class='product_details_color_select color_select_red'></div><span class='label label-success'>red</span>")
-
-                                .product_details__main__params_top__buttons_size
-                                    select.selectpicker_size
-                                        option XS
-                                        option S
-                                        option M
-                                        option L
-                                        option XL
-                                        option XXL
+                                //.product_details__main__params_top__buttons_color
+                                //    select.selectpicker_color
+                                //        option(data-content="<div class='product_details_color_select color_select_black'></div><span class='label label-success'>black</span>")
+                                //        option(data-content="<div class='product_details_color_select color_select_blue'></div><span class='label label-success'>blue</span>")
+                                //        option(data-content="<div class='product_details_color_select color_select_green'></div><span class='label label-success'>green</span>")
+                                //        option(data-content="<div class='product_details_color_select color_select_red'></div><span class='label label-success'>red</span>")
+                                //
+                                //.product_details__main__params_top__buttons_size
+                                //    select.selectpicker_size
+                                //        option XS
+                                //        option S
+                                //        option M
+                                //        option L
+                                //        option XL
+                                //        option XXL
                                 .product_details__main__params_top__buttons_wishlist
                                     button.add-to-whishlist
                                         i.fa.fa-heart.heart_wishlist(aria-hidden="true")
@@ -83,15 +85,16 @@ section.product_details
                                     i.fa.fa-comments(aria-hidden="true")
                                     a(href="") write a reviews
                         .product_details__main__params_bottom
+                            //add class ".out-of-stock__btn"  vvvvvv
                             a(href="#").product_details_add_to_card add to cart
-                        .product_details__main__share
-                            span Share with:
-                            a(href="")
-                                i.fa.fa-facebook(aria-hidden="true")
-                            a(href="")
-                                i.fa.fa-twitter(aria-hidden="true")
-                            a(href="")
-                                i.fa.fa-google-plus(aria-hidden="true")
+                        //.product_details__main__share
+                        //    span Share with:
+                        //    a(href="")
+                        //        i.fa.fa-facebook(aria-hidden="true")
+                        //    a(href="")
+                        //        i.fa.fa-twitter(aria-hidden="true")
+                        //    a(href="")
+                        //        i.fa.fa-google-plus(aria-hidden="true")
                         .product_details__main__bottom_line
         .product_details_main__desc
             .desc_tabs
@@ -105,7 +108,7 @@ section.product_details
                         a(href='#video', aria-controls='video', role='tab', data-toggle='tab') Video
                     li(role='presentation')
                         a(href='#Reviews', aria-controls='Reviews', role='tab', data-toggle='tab') Reviews
-                         span (2)
+                         span.reviews-qty (2)
                     li(role='presentation')
                         a(href='#drivers', aria-controls='drivers', role='tab', data-toggle='tab') Drivers and instruction
                 // Tab panes

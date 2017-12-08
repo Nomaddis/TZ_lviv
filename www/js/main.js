@@ -154,15 +154,31 @@ if (!$("html").hasClass("object-fit")) {
 /*----------  end of objecf fit  ----------*/
 
 window.onload = function () {
-    if(!$('.panel-collapse').hasClass('in')) {
-        check_sidebar();
+    /*-------check catalog----------*/
+    if ($('.panel-collapse').length!==0) {
+        if(!$('.panel-collapse').hasClass('in')) {
+            check_sidebar();
+        }
+    }
+    /*------- check reviews qty ----------*/
+    if ($('.product_details').length!==0) {
+        $('.reviews-qty').text("(" + $('.tab-content__item_review-feedback').length + ")");
     }
 };
+// window.onload = function () {
+//     console.log($('.tab-content__item_review-feedback').length);
+//     $('.tab-content__item_review-feedback').length;
+// };
+//catalog_sidebar
 
-window.addEventListener('resize', function(){
-    check_sidebar();
-});
 
+/*----------- catalog_sidebar resize checker ----------------------*/
+
+if ($('.panel-collapse').length!==0) {
+    window.addEventListener('resize', function(){
+        check_sidebar();
+    });
+}
 function check_sidebar() {
     let window_width = window.innerWidth;
     let sidebar = document.getElementById('collapseSidebar');
@@ -174,6 +190,7 @@ function check_sidebar() {
     }
 }
 
+
 //------------------------- feedback__slider ------------
 $('.feedback__slider').bxSlider({
     infiniteLoop: true,
@@ -182,16 +199,21 @@ $('.feedback__slider').bxSlider({
     auto: true
 });
 
+
 //----------------------- main tabs---------------------
 $('#myTabs a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
 });
+
+
 //------------------------ product detail slider --------------------
 $('.product_details__main__slider').bxSlider({
     pagerCustom: '#bx-pager',
     controls: false
 });
+
+
 //------------------------ product detail selectors-------------
 $('.selectpicker_color').selectpicker({
     style: 'color_selector',
@@ -208,6 +230,8 @@ $('.selectpicker_qty').selectpicker({
 $('.add-to-whishlist').on('click', function () {
     $('.heart_wishlist').toggleClass('active');
 });
+
+
 //---------------------- product detail tabs ------------------
 $('#myTabs a').click(function (e) {
     e.preventDefault()
@@ -224,7 +248,25 @@ $(document).ready(function(){
         auto: true
     });
 });
-//------------------------ BLOG LIST -----------------------------
+
+
+//------------------------ BLOG -----------------------------
 $('.blog-sidebar__tags__body span').on('click', function () {
     $(this).toggleClass('active');
+});
+
+$('.like-btn').on('click', function () {
+    $(this).toggleClass('active');
+});
+
+//----------------------- LOGIN -----------------------------
+
+// add panel color
+$('.login-panel').on('click', function () {
+    if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+    } else {
+        $('.panel-heading').removeClass('active');
+        $(this).addClass('active');
+    }
 });

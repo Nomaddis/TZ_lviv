@@ -8,6 +8,7 @@
     <title>Територія захисту - детально</title>
     <!-- Bootstrap core CSS-->
     <link href="css/all.css" rel="stylesheet">
+    <!--link(href='#{pathToAssets}/bootstrap-select.css', rel='stylesheet')-->
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
     <!-- init bx-slider css start-->
     <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
@@ -22,26 +23,30 @@
   <body>
     <header class="header">
       <section class="header__top">
-        <div class="container clearfix">
-          <div class="header__top__info clearfix">
-            <div class="header__top__info__language"><a href="#"><i aria-hidden="true" class="fa fa-globe"></i><span>English</span></a></div>
-            <div class="header__top__info__phone"><a href="tel:+3801234567"><i aria-hidden="true" class="fa fa-mobile"></i><span>+3801234567</span></a></div>
-            <div class="header__top__info__mail"><a href="mailto:tb-lviv@Gmail.com"><i aria-hidden="true" class="fa fa-envelope-o"></i><span>tb-lviv@Gmail.com</span></a></div>
+        <div class="container">
+          <div class="header__top__fix">
+            <div class="header__top__info">
+              <div class="header__top__info__language">
+                <!--a(href="#")--><i aria-hidden="true" class="fa fa-globe"></i><a href="#" class="active">UA</a><span>|</span><a href="#">RU</a>
+              </div>
+              <div class="header__top__info__phone"><a href="tel:+3801234567"><i aria-hidden="true" class="fa fa-mobile"></i><span>+3801234567</span></a></div>
+              <div class="header__top__info__mail"><a href="mailto:tb-lviv@Gmail.com"><i aria-hidden="true" class="fa fa-envelope-o"></i><span>tb-lviv@Gmail.com</span></a></div>
+            </div>
+            <div class="header__top__actions"><a href="/www/login.html" class="header__top__actions__signIn"><i aria-hidden="true" class="fa fa-sign-in"></i><span>Sign In/Register</span></a><a href="/www/login.html" class="header-personal"><i aria-hidden="true" class="fa fa-user"></i><span>Profile_name</span></a>
+              <!--span /-->
+              <!--a.header__top__actions__Register(href="#")-->
+            </div>
           </div>
-          <div class="header__top__actions"><a href="#" class="header__top__actions__SignIn"><i aria-hidden="true" class="fa fa-sign-in"></i><span>Sign In</span></a><span>/</span><a href="#" class="header__top__actions__Register">Register</a></div>
         </div>
       </section>
       <section class="heder__mid">
         <div class="container clearfix">
           <div class="logo_wrap"><a href="/www/main.html" class="logo"><img src="img/logo.png"></a></div>
           <ul class="header_links">
-            <li><a href="/www/contact-us.html">Contact us</a></li>
-            <li><a href="/www/our-blog.html">Blog</a></li>
             <li><a href="/www/catalog.html">Catalog</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/www/our-blog.html">Blog</a></li>
+            <li><a href="/www/contact-us.html">Contact us</a></li>
+            <li><a href="/www/software.html">Software</a></li>
             <li><a href="/www/cart.html" class="shopping-cart"><i aria-hidden="true" class="fa fa-shopping-cart fa-2x"><span class="shopping_cart_circle">5</span></i></a></li>
           </ul>
         </div>
@@ -50,7 +55,7 @@
         <div class="container clearfix">
           <div class="main_navigation clearfix">
             <button id="show_mainmenu" class="btn show_mainmenu"><span class="show_mainmenu__line"></span></button>
-            <div class="mainmenu">
+            <div id="mainmenu" class="mainmenu">
               <ul>
                 <li><a href="#">Пункт 1</a></li>
                 <li><a href="#">Пункт 2</a></li>
@@ -119,28 +124,26 @@
               </div>
               <div class="col-md-12">
                 <div class="product_details__main__params">
+                  <!--add class ".inactive" vvvvv-->
                   <div class="product_details__main__params_top">
-                    <h3 class="product_details__main__params_top__title">Product title</h3>
+                    <h3 class="product_details__main__params_top__title">Product title</h3><span class="out-of-stock__title">out of stock</span>
                     <div class="product_details__main__params_top__stars"><a href="" class="catalog__item__stars_link"><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star-o"></i><i aria-hidden="true" class="fa fa-star-o"></i><i aria-hidden="true" class="fa fa-star-o"></i></a><span class="in-stock">in stock</span></div>
                     <div class="product_details__main__params_top__buttons">
-                      <div class="product_details__main__params_top__buttons_color">
-                        <select class="selectpicker_color">
-                          <option data-content="&lt;div class='product_details_color_select color_select_black'&gt;&lt;/div&gt;&lt;span class='label label-success'&gt;black&lt;/span&gt;"></option>
-                          <option data-content="&lt;div class='product_details_color_select color_select_blue'&gt;&lt;/div&gt;&lt;span class='label label-success'&gt;blue&lt;/span&gt;"></option>
-                          <option data-content="&lt;div class='product_details_color_select color_select_green'&gt;&lt;/div&gt;&lt;span class='label label-success'&gt;green&lt;/span&gt;"></option>
-                          <option data-content="&lt;div class='product_details_color_select color_select_red'&gt;&lt;/div&gt;&lt;span class='label label-success'&gt;red&lt;/span&gt;"></option>
-                        </select>
-                      </div>
-                      <div class="product_details__main__params_top__buttons_size">
-                        <select class="selectpicker_size">
-                          <option>XS</option>
-                          <option>S</option>
-                          <option>M</option>
-                          <option>L</option>
-                          <option>XL</option>
-                          <option>XXL</option>
-                        </select>
-                      </div>
+                      <!--.product_details__main__params_top__buttons_color-->
+                      <!--    select.selectpicker_color-->
+                      <!--        option(data-content="<div class='product_details_color_select color_select_black'></div><span class='label label-success'>black</span>")-->
+                      <!--        option(data-content="<div class='product_details_color_select color_select_blue'></div><span class='label label-success'>blue</span>")-->
+                      <!--        option(data-content="<div class='product_details_color_select color_select_green'></div><span class='label label-success'>green</span>")-->
+                      <!--        option(data-content="<div class='product_details_color_select color_select_red'></div><span class='label label-success'>red</span>")-->
+                      <!---->
+                      <!--.product_details__main__params_top__buttons_size-->
+                      <!--    select.selectpicker_size-->
+                      <!--        option XS-->
+                      <!--        option S-->
+                      <!--        option M-->
+                      <!--        option L-->
+                      <!--        option XL-->
+                      <!--        option XXL-->
                       <div class="product_details__main__params_top__buttons_wishlist">
                         <button class="add-to-whishlist"><i aria-hidden="true" class="fa fa-heart heart_wishlist"></i><span>add to wishlist</span></button>
                       </div>
@@ -168,8 +171,17 @@
                       <div class="product_details__feedback__view"><i aria-hidden="true" class="fa fa-comments"></i><a href="">write a reviews</a></div>
                     </div>
                   </div>
-                  <div class="product_details__main__params_bottom"><a href="#" class="product_details_add_to_card">add to cart</a></div>
-                  <div class="product_details__main__share"><span>Share with:</span><a href=""><i aria-hidden="true" class="fa fa-facebook"></i></a><a href=""><i aria-hidden="true" class="fa fa-twitter"></i></a><a href=""><i aria-hidden="true" class="fa fa-google-plus"></i></a></div>
+                  <div class="product_details__main__params_bottom">
+                    <!--add class ".out-of-stock__btn"  vvvvvv--><a href="#" class="product_details_add_to_card">add to cart</a>
+                  </div>
+                  <!--.product_details__main__share-->
+                  <!--    span Share with:-->
+                  <!--    a(href="")-->
+                  <!--        i.fa.fa-facebook(aria-hidden="true")-->
+                  <!--    a(href="")-->
+                  <!--        i.fa.fa-twitter(aria-hidden="true")-->
+                  <!--    a(href="")-->
+                  <!--        i.fa.fa-google-plus(aria-hidden="true")-->
                   <div class="product_details__main__bottom_line"></div>
                 </div>
               </div>
@@ -182,7 +194,7 @@
                 <li role="presentation" class="active"><a href="#descriptions" aria-controls="descriptions" role="tab" data-toggle="tab">Descriptions</a></li>
                 <li role="presentation"><a href="#characteristics" aria-controls="characteristics" role="tab" data-toggle="tab">Characteristics</a></li>
                 <li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li>
-                <li role="presentation"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews<span>(2)</span></a></li>
+                <li role="presentation"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews<span class="reviews-qty">(2)</span></a></li>
                 <li role="presentation"><a href="#drivers" aria-controls="drivers" role="tab" data-toggle="tab">Drivers and instruction</a></li>
               </ul>
               <!-- Tab panes-->
@@ -680,15 +692,12 @@
           </div>
           <div class="col-md-8">
             <div class="footer__inf">
-              <h5 class="footer__title">Informations</h5>
+              <h5 class="footer__title">Menu</h5>
               <div class="footer__title_line"></div>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Delivery Information</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Return Policy</a></li>
+                <li><a href="/www/catalog.html">Catalog</a></li>
+                <li><a href="/www/our-blog.html">Blog</a></li>
+                <li><a href="/www/contact-us.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -727,8 +736,10 @@
     <script src="js/bs-js/modal.js"></script>
     <!-- -- bx-slider init start---//-->
     <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js')-->
+    <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js')-->
+    
     <!-- -- jquery - UI init end---//-->
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
     <!-- -- jquery - UI init end---//-->

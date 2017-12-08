@@ -3,7 +3,7 @@ main
         .login
             #accordion.panel-group(role='tablist', aria-multiselectable='true')
                 .panel.panel-default
-                    #headingOne.panel-heading.active(role='tab')
+                    #headingOne.panel-heading.active.login-panel(role='tab')
                         h4.panel-title
                             a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
                                 | Step 1 - login or register
@@ -20,20 +20,20 @@ main
                                             .login-form__req
                                                 span Username
                                                     i(class="fa fa-asterisk" aria-hidden="true")
-                                            input(type="text" placeholder="Username/Email/Mobile Number")
+                                            input.login-input(type="text" placeholder="Username/Email/Mobile Number")
                                         .login-form__password
                                             .login-form__req
                                                 span Password
                                                     i(class="fa fa-asterisk" aria-hidden="true")
-                                            input(type="password" placeholder="Type your password here")
+                                            input.login-input(type="password" placeholder="Type your password here")
                                         .login-form__buttons
                                             button(type="submit").btn_black login
                                             a(href="#") Forget Password Click Here?
                                         .login-form__buttons_social
                                             a(href="#")
                                                 i(class="fa fa-facebook" aria-hidden="true") &nbsp; sign in with facebook
-                                            a(href="#")
-                                                i(class="fa fa-twitter" aria-hidden="true") &nbsp; sign in with twitter
+                                            //a(href="#")
+                                            //    i(class="fa fa-twitter" aria-hidden="true") &nbsp; sign in with twitter
                                 .col-md-14
                                     .login-create
                                         h5 create a account
@@ -43,32 +43,32 @@ main
                                                     .login-form__req
                                                         span First Name
                                                             i(class="fa fa-asterisk" aria-hidden="true")
-                                                    input(type="text" placeholder="Enter Your First Name")
+                                                    input.login-input(type="text" placeholder="Enter Your First Name")
                                                 .login-form__username__last
                                                     .login-form__req
                                                         span Last Name
                                                             i(class="fa fa-asterisk" aria-hidden="true")
-                                                    input(type="text" placeholder="Enter Your Last Name")
+                                                    input.login-input(type="text" placeholder="Enter Your Last Name")
                                             .login-form__password
                                                 .login-form__req
                                                     span Email Id
                                                         i(class="fa fa-asterisk" aria-hidden="true")
-                                                input(type="text" placeholder="Enter Your Email Id")
+                                                input.login-input(type="text" placeholder="Enter Your Email Id")
                                             .login-form__username_craete
                                                 .login-form__username__first
                                                     .login-form__req
                                                         span Choose Password
                                                             i(class="fa fa-asterisk" aria-hidden="true")
-                                                    input(type="password" placeholder="Enter Your Password")
+                                                    input.login-input(type="password" placeholder="Enter Your Password")
                                                 .login-form__username__last
                                                     .login-form__req
                                                         span Confirm Password
                                                             i(class="fa fa-asterisk" aria-hidden="true")
-                                                    input(type="text" placeholder="Confirm Your Password")
+                                                    input.login-input(type="text" placeholder="Confirm Your Password")
                                             .login-form__buttons
                                                 button(type="submit").btn_black register now
                 .panel.panel-default
-                    #headingTwo.panel-heading(role='tab')
+                    #headingTwo.panel-heading.login-panel(role='tab')
                         h4.panel-title
                             a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
                                 | step 2 - shipping address
@@ -83,27 +83,30 @@ main
                                                 .login-form__req
                                                     span First Name
                                                         i(class="fa fa-asterisk" aria-hidden="true")
-                                                input(type="text" placeholder="Enter Your First Name")
+                                                input.shipping-input(type="text" placeholder="Enter Your First Name")
                                             .login-form__username__last
                                                 .login-form__req
                                                     span Last Name
                                                         i(class="fa fa-asterisk" aria-hidden="true")
-                                                input(type="text" placeholder="Enter Your Last Name")
+                                                input.shipping-input(type="text" placeholder="Enter Your Last Name")
                                             .login-form__password
                                                 .login-form__req
                                                     span Phone number
                                                         i(class="fa fa-asterisk" aria-hidden="true")
-                                                input(type="text" placeholder="Type your phone")
+                                                input.shipping-input(type="text" placeholder="Type your phone")
                                             .login-form__username
                                                 .login-form__req
                                                     span Address
                                                         i(class="fa fa-asterisk" aria-hidden="true")
-                                                input(type="text" placeholder="Enter your street")
+                                                input.shipping-input(type="text" placeholder="Enter your street")
                                             .login-form__password
                                                 .login-form__req
                                                     span City/Town
                                                         i(class="fa fa-asterisk" aria-hidden="true")
-                                                input(type="password" placeholder="Type your city here")
+                                                input.shipping-input(type="password" placeholder="Type your city here")
+                                            .login-form__from-market
+                                                input(type="checkbox" id="from-market")
+                                                label(for="from-market") Самовивіз з магазину у м. Львів
 
                                     .col-md-12
                                         .choose-address
@@ -142,7 +145,7 @@ main
                             .login-form__buttons
                                 button(type="submit").btn_black Proceed to checkout
                 .panel.panel-default
-                    #headingThree.panel-heading(role='tab')
+                    #headingThree.panel-heading.login-panel(role='tab')
                         h4.panel-title
                             a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
                                 | step 3 - payment
