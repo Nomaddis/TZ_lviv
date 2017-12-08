@@ -2,52 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f6b2911-7703-4688-94d8-b190d96bc6eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/_includes/blocks/blog-siebar.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/_includes/software/software.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/software.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/less/_includes/software.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/blocks/blog-item-prev.jade" afterPath="$PROJECT_DIR$/template/_includes/blocks/blog-item-prev.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/blog-detail/blog-detail.jade" afterPath="$PROJECT_DIR$/template/_includes/blog-detail/blog-detail.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/catalog/catalog.jade" afterPath="$PROJECT_DIR$/template/_includes/catalog/catalog.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/contact-us/contact-us.jade" afterPath="$PROJECT_DIR$/template/_includes/contact-us/contact-us.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/footer/footer.jade" afterPath="$PROJECT_DIR$/template/_includes/footer/footer.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/head.jade" afterPath="$PROJECT_DIR$/template/_includes/head.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/header/header.jade" afterPath="$PROJECT_DIR$/template/_includes/header/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/js-links.jade" afterPath="$PROJECT_DIR$/template/_includes/js-links.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/login/login.jade" afterPath="$PROJECT_DIR$/template/_includes/login/login.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/our-blog/our-blog.jade" afterPath="$PROJECT_DIR$/template/_includes/our-blog/our-blog.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/_includes/product_details/product_details.jade" afterPath="$PROJECT_DIR$/template/_includes/product_details/product_details.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/index.jade" afterPath="$PROJECT_DIR$/template/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/account-dashboard.html" afterPath="$PROJECT_DIR$/www/account-dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/account-orders.html" afterPath="$PROJECT_DIR$/www/account-orders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/account-password.html" afterPath="$PROJECT_DIR$/www/account-password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/account-subscription.html" afterPath="$PROJECT_DIR$/www/account-subscription.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/account-whishlist.html" afterPath="$PROJECT_DIR$/www/account-whishlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/blog-detail.html" afterPath="$PROJECT_DIR$/www/blog-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/cart.html" afterPath="$PROJECT_DIR$/www/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/catalog.html" afterPath="$PROJECT_DIR$/www/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/contact-us.html" afterPath="$PROJECT_DIR$/www/contact-us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/all.css" afterPath="$PROJECT_DIR$/www/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/concat/all.css" afterPath="$PROJECT_DIR$/www/css/concat/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/concat/all.css.map" afterPath="$PROJECT_DIR$/www/css/concat/all.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/bootstrap-select.min.js" afterPath="$PROJECT_DIR$/www/js/bootstrap-select.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/main.js" afterPath="$PROJECT_DIR$/www/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/blog-detail.less" afterPath="$PROJECT_DIR$/www/less/_includes/blog-detail.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/contact-us.less" afterPath="$PROJECT_DIR$/www/less/_includes/contact-us.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/footer.less" afterPath="$PROJECT_DIR$/www/less/_includes/footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/header.less" afterPath="$PROJECT_DIR$/www/less/_includes/header.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/landing.less" afterPath="$PROJECT_DIR$/www/less/_includes/landing.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/login.less" afterPath="$PROJECT_DIR$/www/less/_includes/login.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/our-blog.less" afterPath="$PROJECT_DIR$/www/less/_includes/our-blog.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/product_details.less" afterPath="$PROJECT_DIR$/www/less/_includes/product_details.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/_includes/variables.less" afterPath="$PROJECT_DIR$/www/less/_includes/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/less/all.less" afterPath="$PROJECT_DIR$/www/less/all.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/login.html" afterPath="$PROJECT_DIR$/www/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/our-blog.html" afterPath="$PROJECT_DIR$/www/our-blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/product_details.html" afterPath="$PROJECT_DIR$/www/product_details.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,8 +34,8 @@
       <file leaf-file-name="software.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/_includes/software/software.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="204">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -95,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/less/_includes/login.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="208">
+              <caret line="252" column="5" lean-forward="false" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -125,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="head.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/_includes/head.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="254">
               <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
@@ -231,11 +187,11 @@
         <option value="$PROJECT_DIR$/template/index.jade" />
         <option value="$PROJECT_DIR$/template/_includes/header/header.jade" />
         <option value="$PROJECT_DIR$/www/less/_includes/software.less" />
-        <option value="$PROJECT_DIR$/template/_includes/software/software.jade" />
         <option value="$PROJECT_DIR$/www/less/_includes/header.less" />
-        <option value="$PROJECT_DIR$/www/less/_includes/login.less" />
         <option value="$PROJECT_DIR$/template/_includes/login/login.jade" />
         <option value="$PROJECT_DIR$/www/js/main.js" />
+        <option value="$PROJECT_DIR$/template/_includes/software/software.jade" />
+        <option value="$PROJECT_DIR$/www/less/_includes/login.less" />
       </list>
     </option>
   </component>
@@ -657,12 +613,12 @@
       <workItem from="1509832849704" duration="1310000" />
       <workItem from="1509984054160" duration="25000" />
       <workItem from="1511611942997" duration="626000" />
-      <workItem from="1512729625952" duration="634000" />
+      <workItem from="1512729625952" duration="933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604382000" />
+    <option name="totallyTimeSpent" value="604681000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -684,7 +640,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20405406" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22297297" sideWeight="0.4929306" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6310811" sideWeight="0.4929306" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30269924" sideWeight="0.51277953" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -986,22 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/_includes/software/software.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/less/_includes/login.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/_includes/login/login.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1045,8 +985,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/_includes/head.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="254">
           <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/_includes/software/software.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/less/_includes/login.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="252" column="5" lean-forward="false" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
           <folding />
         </state>
       </provider>
